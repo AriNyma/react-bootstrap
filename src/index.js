@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MyApp from './MyApp';
+import { faker } from '@faker-js/faker';
+
+const card = [
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()}
+]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <MyApp cards = {card}/>
   </React.StrictMode>
 );
 
