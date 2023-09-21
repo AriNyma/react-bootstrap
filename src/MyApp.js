@@ -25,13 +25,20 @@ export default function MyApp(props) {
                 {props.cards.map((card, index) => (
                 <Card key={index} style = {{width: '18rem'}} bg={"success"} text={"strong"}>
                     <Card.Body>
-                        <Card.Title>{card.vinkki} </Card.Title>
-                        <Card.Text>
-                            {card.teksti}
-                        </Card.Text>
-                        <Button variant="primary" onClick={() => console.log("Clicked!")}>Click me!</Button>
+                        <Row>
+                            <Col md style={{ backgroundColor: 'success' }}>
+                            <Card.Title>{card.vinkki} </Card.Title>
+                            </Col>
+                            <Col md style={{ backgroundColor: 'lightgreen' }}>
+                            <Card.Text>
+                                {card.teksti}
+                            </Card.Text>
+                            
+                            <Button variant="primary" onClick={() => console.log("Clicked!")}>Click me!</Button>
+                            </Col>
+                        </Row>
                     </Card.Body>
-                </Card>
+                </Card>    
                 ))}
             </Container>
           
