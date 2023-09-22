@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MyApp from './MyApp';
 import { faker } from '@faker-js/faker';
+import MyApp from './MyApp';
 
 const card = [
     { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
@@ -20,7 +19,7 @@ const card = [
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MyApp cards = {card}/>
+            <MyApp cards = {card}/>
   </React.StrictMode>
 );
 
