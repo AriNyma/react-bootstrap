@@ -7,13 +7,13 @@ import { faker } from '@faker-js/faker';
 import MyApp from './MyApp';
 
 const card = [
-    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
-    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
-    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
-    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
-    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
-    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()},
-    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence()}
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence(), teksti1: faker.lorem.sentence(), teksti2: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence(), teksti1: faker.lorem.sentence(), teksti2: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence(), teksti1: faker.lorem.sentence(), teksti2: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence(), teksti1: faker.lorem.sentence(), teksti2: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence(), teksti1: faker.lorem.sentence(), teksti2: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence(), teksti1: faker.lorem.sentence(), teksti2: faker.lorem.sentence()},
+    { vinkki: faker.word.adjective(), teksti: faker.lorem.sentence(), teksti1: faker.lorem.sentence(), teksti2: faker.lorem.sentence()}
 ]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,9 +1,8 @@
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import GridCard from './GridCard';
+import AnswerCard from './AnswerCard';
 
 export default function MyApp(props) {
     return (
@@ -12,6 +11,7 @@ export default function MyApp(props) {
                 <Row>
                     <Col>
                     <h1>Test</h1>
+                    
                     </Col>
                 </Row>
                 {props.cards.map((card, index) => (
@@ -19,17 +19,13 @@ export default function MyApp(props) {
                     <Card.Body>
                         <Row>
                             <Col md style={{ backgroundColor: 'success' }}>
-                            <Card.Title>{card.vinkki} </Card.Title>
+                                <Card.Title>Subject: {card.vinkki} </Card.Title>
                             </Col>
                             <Col md style={{ backgroundColor: 'lightgreen' }}>
-                            <Card.Text>
-                                {card.teksti}
-                            </Card.Text>
-                            
-                            <Button variant="primary" onClick={() => console.log("Clicked!")}>Click me!</Button>
+                                <Card.Text>Question: {card.teksti}</Card.Text>   
                             </Col>
                             <Col>
-                                <GridCard></GridCard>
+                                <AnswerCard cards = {card}/>  
                             </Col>
                         </Row>
                     </Card.Body>
